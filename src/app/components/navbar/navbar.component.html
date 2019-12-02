@@ -1,1 +1,12 @@
-<p>navbar works!</p>
+<mat-toolbar>
+  <mat-toolbar-row class="cstm-global-max-width cstm-vrtcl-margin-auto">
+    <span>anti-social</span>
+    <span class="cstm-flex-between"></span>
+    <button mat-button fxShow fxHide.gt-xs (click)="clicked()">
+      <mat-icon>people_alt</mat-icon>
+    </button>
+    <button mat-button (click)="clicked()">
+      <mat-icon>person</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>

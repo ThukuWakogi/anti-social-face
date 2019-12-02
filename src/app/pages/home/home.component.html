@@ -1,1 +1,11 @@
-<p>home works!</p>
+<div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px">
+  <div fxFlex="30%" fxHide fxShow.gt-xs>
+    <app-neighbourinfo></app-neighbourinfo>
+  </div>
+  <div fxFlex="70%" fxFlex.lt-sm="100%">
+    <app-post-form></app-post-form>
+    <div>
+      <app-post *ngFor="let _ of [1,2,3,4]"></app-post>
+    </div>
+  </div>
+</div>

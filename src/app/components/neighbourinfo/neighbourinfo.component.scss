@@ -1,0 +1,8 @@
+mat-card {
+  & > div {
+    & > a {
+      text-decoration: none;
+      color: black
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    <div>
+      <mat-card-content>
+        <p>say something</p>
+        <form [formGroup]="postForm">
+          <mat-form-field class="cstm-full-width">
+            <mat-label>what's happening</mat-label>
+            <textarea
+              matInput
+              cdkTextareaAutosize
+              cdkAutosizeMinRows="1"
+              cdkAutosizeMaxRows="5"
+              formControlName="post"
+            ></textarea>
+          </mat-form-field>
+          <button type="submit" mat-stroked-button color="primary">
+            <span>submit</span>
+          </button>
+        </form>
+      </mat-card-content>
+    </div>
+  </mat-card>

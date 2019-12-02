@@ -1,0 +1,10 @@
+mat-card {
+  padding: 0px;
+  overflow: hidden;
+  & > div {
+    padding: 16px;
+    & > mat-card-content {
+      margin-bottom: 0px;
+    }
+  }
+}
