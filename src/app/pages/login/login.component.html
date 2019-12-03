@@ -3,14 +3,36 @@
     <mat-card>
       <h1 class="mat-display-3">login</h1>
       <p>Enter your details to sign in</p>
-      <form [formGroup]="loginForm">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <mat-form-field>
           <input matInput type="text" placeholder="username" formControlName="username">
+          <mat-error *ngIf="loginForm.get('username').hasError('required')">
+            username is required
+          </mat-error>
         </mat-form-field>
         <mat-form-field>
-          <input matInput type="password" placeholder="password" formControlName="password">
+          <input
+            matInput
+            [type]="showPassword ? 'text' : 'password'"
+            placeholder="password"
+            formControlName="password"
+          >
+          <button
+            mat-icon-button
+            matSuffix
+            (click)="showPassword = !showPassword"
+            type="button"
+          >
+            <mat-icon>{{ showPassword ? 'visibility_on' : 'visibility_off' }}</mat-icon>
+          </button>
+          <mat-error *ngIf="loginForm.get('password').hasError('required')">
+            password is required
+          </mat-error>
         </mat-form-field>
-        <button mat-stroked-button type="submit" color=primary>sign in</button>
+        <button mat-stroked-button type="submit" color=primary [disabled]="sendingRequest">
+          <mat-progress-spinner mode="indeterminate" diameter="25" *ngIf="sendingRequest"></mat-progress-spinner>
+          <span>sign in</span>
+        </button>
       </form>
       <p>Dont have an account? <a [routerLink]="['/register']">register!</a></p>
     </mat-card>

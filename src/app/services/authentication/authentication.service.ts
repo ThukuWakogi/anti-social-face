@@ -59,4 +59,21 @@ export class AuthenticationService {
     localStorage.removeItem('antscl_token')
     this.currentUserSubject.next(null)
   }
+
+  login(loginData: any) {
+    return this
+      .http
+      .post<any>(`${environment.apiUrl}/auth/`, loginData)
+      .pipe(
+        map(data => {
+          console.log({data})
+          localStorage.setItem('antscl_token', data.token)
+          this.currentUserSubject.next(data.user)
+        }),
+        catchError(err => {
+          console.log(err)
+          return throwError(err)
+        })
+      )
+  }
 }

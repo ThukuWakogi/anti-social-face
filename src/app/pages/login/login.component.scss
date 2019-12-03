@@ -18,6 +18,10 @@
         padding: 0px 12px;
         & > button {
           align-self: baseline;
+          & mat-progress-spinner {
+            display: inline-block;
+            margin-right: 8px;
+          }
         }
       }
       & > p > a {
