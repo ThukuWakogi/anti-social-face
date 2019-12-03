@@ -1,0 +1,28 @@
+.cstm-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .cstm-login-container-content {
+    text-align: center;
+    width: 95%;
+    max-width: 580px;
+    & > mat-card {
+      & > h1 {
+        font-weight: lighter;
+        margin-bottom: 0px;
+      }
+      & > form {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 12px;
+        & > button {
+          align-self: baseline;
+        }
+      }
+      & > p > a {
+        text-decoration: none;
+      }
+    }
+  }
+}

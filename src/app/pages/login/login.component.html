@@ -1,1 +1,18 @@
-<p>login works!</p>
+<div class="cstm-login-container">
+  <div class="cstm-login-container-content">
+    <mat-card>
+      <h1 class="mat-display-3">login</h1>
+      <p>Enter your details to sign in</p>
+      <form [formGroup]="loginForm">
+        <mat-form-field>
+          <input matInput type="text" placeholder="username" formControlName="username">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="password" placeholder="password" formControlName="password">
+        </mat-form-field>
+        <button mat-stroked-button type="submit" color=primary>sign in</button>
+      </form>
+      <p>Dont have an account? <a [routerLink]="['/register']">register!</a></p>
+    </mat-card>
+  </div>
+</div>
