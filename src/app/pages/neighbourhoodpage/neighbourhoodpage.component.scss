@@ -1,0 +1,15 @@
+.cstm-neighbour-page-header {
+  text-align: center;
+  & > div {
+    & > h1 {
+      margin-bottom: 0px;
+    }
+    & > mat-icon {
+      font-size: 40px;
+    }
+  }
+}
+
+.cstm-neighbour-page-body {
+  margin-top: 20px;
+}

@@ -8,6 +8,7 @@ import { MatInputModule } from '@angular/material/input'
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 import { MatProgressBarModule } from '@angular/material/progress-bar'
 import { FlexLayoutModule } from '@angular/flex-layout'
+import { MatExpansionModule } from '@angular/material/expansion'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -21,7 +22,8 @@ import { NeighbourinfoComponent } from './components/neighbourinfo/neighbourinfo
 import { PostFormComponent } from './components/post-form/post-form.component';
 import { PostComponent } from './components/post/post.component';
 import { ChooseneighborhoodComponent } from './pages/chooseneighborhood/chooseneighborhood.component';
-import { NeighbourhoodComponent } from './components/neighbourhood/neighbourhood.component'
+import { NeighbourhoodComponent } from './components/neighbourhood/neighbourhood.component';
+import { NeighbourhoodpageComponent } from './pages/neighbourhoodpage/neighbourhoodpage.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { NeighbourhoodComponent } from './components/neighbourhood/neighbourhood
     PostFormComponent,
     PostComponent,
     ChooseneighborhoodComponent,
-    NeighbourhoodComponent
+    NeighbourhoodComponent,
+    NeighbourhoodpageComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ import { NeighbourhoodComponent } from './components/neighbourhood/neighbourhood
     MatInputModule,
     MatProgressSpinnerModule,
     MatProgressBarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

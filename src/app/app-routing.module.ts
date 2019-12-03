@@ -4,13 +4,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ChooseneighborhoodComponent } from './pages/chooseneighborhood/chooseneighborhood.component';
+import { NeighbourhoodpageComponent } from './pages/neighbourhoodpage/neighbourhoodpage.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'chooseneighborhood', component: ChooseneighborhoodComponent }
+  { path: 'chooseneighborhood', component: ChooseneighborhoodComponent },
+  { path: 'neighborhood', component: NeighbourhoodpageComponent }
 ];
 
 @NgModule({

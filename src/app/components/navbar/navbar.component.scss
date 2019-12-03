@@ -1,4 +1,8 @@
 mat-toolbar {
   position: fixed;
   z-index: 1;
+  & > mat-toolbar-row > span > a {
+    text-decoration: none;
+    color: black;
+  }
 }

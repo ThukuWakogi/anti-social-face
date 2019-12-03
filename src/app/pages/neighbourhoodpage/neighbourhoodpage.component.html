@@ -1,0 +1,25 @@
+<mat-card class="cstm-neighbour-page-header">
+  <div>
+    <mat-icon>home_work</mat-icon>
+    <h1 class="mat-display-1">neighbour name</h1>
+    <h3>location</h3>
+  </div>
+</mat-card>
+<div class="cstm-neighbour-page-body">
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>contact info</mat-panel-title>
+      </mat-expansion-panel-header>
+      <div fxLayout="row wrap">
+        <div *ngFor="let _ of [1,2,3,4]" fxFlex="31%">lol</div>
+      </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>businesses</mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>well... yes, but.</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

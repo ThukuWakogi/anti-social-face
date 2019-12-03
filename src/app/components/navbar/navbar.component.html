@@ -1,6 +1,8 @@
 <mat-toolbar>
   <mat-toolbar-row class="cstm-global-max-width cstm-vrtcl-margin-auto">
-    <span>anti-social</span>
+    <span>
+      <a [routerLink]="['']">anti-social</a>
+    </span>
     <span class="cstm-flex-between"></span>
     <button mat-button fxShow fxHide.gt-xs (click)="clicked()">
       <mat-icon>people_alt</mat-icon>
