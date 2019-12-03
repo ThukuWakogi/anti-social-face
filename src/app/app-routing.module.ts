@@ -6,10 +6,11 @@ import { RegisterComponent } from './pages/register/register.component';
 import { ChooseneighborhoodComponent } from './pages/chooseneighborhood/chooseneighborhood.component';
 import { NeighbourhoodpageComponent } from './pages/neighbourhoodpage/neighbourhoodpage.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { AuthGuard } from './guards/auth/auth.guard';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'chooseneighborhood', component: ChooseneighborhoodComponent },
