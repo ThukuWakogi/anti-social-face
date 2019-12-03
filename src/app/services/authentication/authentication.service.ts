@@ -54,4 +54,9 @@ export class AuthenticationService {
         }
       )
   }
+
+  logout() {
+    localStorage.removeItem('antscl_token')
+    this.currentUserSubject.next(null)
+  }
 }
