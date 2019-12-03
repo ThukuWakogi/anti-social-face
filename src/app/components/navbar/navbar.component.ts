@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from 'src/app/services/authentication/authentication.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -6,11 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  currentUser: any
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private authenticationService: AuthenticationService
+  ) {
+    this
+      .authenticationService
+      .currentUser
+      .subscribe(user => this.currentUser = user)
+  }
 
   ngOnInit() {
   }
 
-  clicked() {console.log('clicked!')}
+  onProfileButtonClick() {
+    if (this.currentUser) this.router.navigate(['/user'])
+    if (!this.currentUser) this.router.navigate(['/login'])
+  }
 }

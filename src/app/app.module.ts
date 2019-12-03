@@ -9,6 +9,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 import { MatProgressBarModule } from '@angular/material/progress-bar'
 import { FlexLayoutModule } from '@angular/flex-layout'
 import { MatExpansionModule } from '@angular/material/expansion'
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -54,7 +55,8 @@ import { ProfileComponent } from './pages/profile/profile.component'
     MatProgressSpinnerModule,
     MatProgressBarModule,
     FlexLayoutModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
