@@ -19,7 +19,9 @@ import { NavbarComponent } from './components/navbar/navbar.component'
 import { ReactiveFormsModule } from '@angular/forms'
 import { NeighbourinfoComponent } from './components/neighbourinfo/neighbourinfo.component';
 import { PostFormComponent } from './components/post-form/post-form.component';
-import { PostComponent } from './components/post/post.component'
+import { PostComponent } from './components/post/post.component';
+import { ChooseneighborhoodComponent } from './pages/chooseneighborhood/chooseneighborhood.component';
+import { NeighbourhoodComponent } from './components/neighbourhood/neighbourhood.component'
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { PostComponent } from './components/post/post.component'
     NavbarComponent,
     NeighbourinfoComponent,
     PostFormComponent,
-    PostComponent
+    PostComponent,
+    ChooseneighborhoodComponent,
+    NeighbourhoodComponent
   ],
   imports: [
     BrowserModule,
