@@ -1,0 +1,17 @@
+<div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px">
+  <div fxFlex="30%" fxHide fxShow.gt-xs>
+    <mat-card>
+      <div>
+        <h3 class="mat-display-1 cstm-0-bottom-margin">auser</h3>
+        <p>date</p>
+        <p>bio</p>
+      </div>
+    </mat-card>
+  </div>
+  <div fxFlex="70%" fxFlex.lt-sm="100%">
+    <app-post-form></app-post-form>
+    <div>
+      <app-post *ngFor="let _ of [1,2,3,4]"></app-post>
+    </div>
+  </div>
+</div>

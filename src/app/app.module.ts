@@ -23,7 +23,8 @@ import { PostFormComponent } from './components/post-form/post-form.component';
 import { PostComponent } from './components/post/post.component';
 import { ChooseneighborhoodComponent } from './pages/chooseneighborhood/chooseneighborhood.component';
 import { NeighbourhoodComponent } from './components/neighbourhood/neighbourhood.component';
-import { NeighbourhoodpageComponent } from './pages/neighbourhoodpage/neighbourhoodpage.component'
+import { NeighbourhoodpageComponent } from './pages/neighbourhoodpage/neighbourhoodpage.component';
+import { ProfileComponent } from './pages/profile/profile.component'
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { NeighbourhoodpageComponent } from './pages/neighbourhoodpage/neighbourh
     PostComponent,
     ChooseneighborhoodComponent,
     NeighbourhoodComponent,
-    NeighbourhoodpageComponent
+    NeighbourhoodpageComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ChooseneighborhoodComponent } from './pages/chooseneighborhood/chooseneighborhood.component';
 import { NeighbourhoodpageComponent } from './pages/neighbourhoodpage/neighbourhoodpage.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'chooseneighborhood', component: ChooseneighborhoodComponent },
-  { path: 'neighborhood', component: NeighbourhoodpageComponent }
+  { path: 'neighborhood', component: NeighbourhoodpageComponent },
+  { path: 'user', component: ProfileComponent }
 ];
 
 @NgModule({
