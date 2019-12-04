@@ -3,11 +3,11 @@
   <h2>choose one</h2>
 </mat-card>
 <div class="cstm-neighborhood-div" fxLayout="row wrap" fxLayoutAlign="center" fxLayout.lt-sm="column">
-  <mat-card *ngFor="let _ of [1,2,3,4]" fxFlex="31%" fxFlex.lt-md="100%">
-    <h3>neighborhood name</h3>
+  <mat-card *ngFor="let neighborhood of neighborhoods" fxFlex="31%" fxFlex.lt-md="100%">
+    <h3>{{ neighborhood.name }}</h3>
     <p>location</p>
     <div>
-      <button mat-stroked-button>View more details</button>
+      <a [routerLink]="['/neighborhood']" mat-stroked-button>View more details</a>
       <button mat-stroked-button color="primary">Enter</button>
     </div>
   </mat-card>
